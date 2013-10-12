@@ -39,7 +39,8 @@ Things I'm hoping to fix:
  * Best practice: if this is set up correctly, there should be a 1 paragraph 
    explanation on how to hook into puppet and github releases.
  * Extension: Add new eggs and sources by modifying 1 file, with the capacity to do
-   this programatically. custom.cfg? Maybe...
+   this programatically. custom.cfg? Maybe... could be hosted remotely, and edited
+   on the users side. INSERT SOMETHING CLEVER
  * On the same note, put together a collection of egg packages that fit different 
    domains. For example, edu.cfg.
  * Data: build in data backup to the deploy process. Repozo, build, restart always.
