@@ -39,7 +39,9 @@ Things I'm hoping to fix:
  * Best practice: if this is set up correctly, there should be a 1 paragraph 
    explanation on how to hook into puppet and github releases.
  * Extension: Add new eggs and sources by modifying 1 file, with the capacity to do
-   this programatically. 
+   this programatically. custom.cfg? Maybe...
+ * On the same note, put together a collection of egg packages that fit different 
+   domains. For example, edu.cfg.
  * Data: build in data backup to the deploy process. Repozo, build, restart always.
    Reverts won't be perfect, but they will be close enough. 
  * Production vs Dev: be clear on what is needed for production. Buildout should 
@@ -48,6 +50,7 @@ Things I'm hoping to fix:
    a production deploy.
  * Easy to clean up: no more guessing which files are deletable and which ones 
    aren't. If its not in deploy, they are all on the hitlist
+ * supervisor: stays in its own little box. It messes things UP!
 
 
 ====
