@@ -4,3 +4,5 @@ releases/
 eggs/
 python/
 data/
+var/
+deploy/.installed.cfg

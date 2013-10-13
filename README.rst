@@ -65,16 +65,32 @@ It's a personal project. Don't hold your breath.
 HOW
 ===
 
- 1. Clone this repo
- 1. Optional: make a virtual env in the root::
+Production
+^^^^^^^^^^
 
-    > virtualenv python
+  1. Clone this repo
+  2. Optional: make a virtual env in the root::
+
+      % virtualenv python
+
  
- 1. cd deploy
- 1. ../python/bin/python bootstrap.py
- 1. ../bin/buildout [-c prod/dev.cfg]
+  3. Go into deploy and set up everything. This only has to be done once.
+     This will set up the directory structure, which will be symlinky later::
 
-Coming Soon I guess...
+     % cd deploy
+     % ../python/bin/python bootstrap.py
+
+
+  4. Prepare the release::
+
+     % ../bin/buildout -c release.cfg
+
+
+  5. Prepare zope
+
+     % ../bin/buildout -c prod.cfg
+
+
 
 
 ====
