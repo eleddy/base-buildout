@@ -92,6 +92,19 @@ Production
 
 
 
+Logging
+^^^^^^^
+
+You'll note that in production there is no syslog set up. This is because any logging
+is meant to be configured through rsyslog. This will make sure everything is centralized,
+and that if you have other syslog setups they can work too.
+
+To make this work properly, configure puppet to add a file /etc/rsyslog.d/30-zope.conf
+with a link to where you want the logs, and any remote logging like papertrail::
+
+    local3.*          @logs.papertrailapp.com:XXXXX
+    local3.*          /var/log/zope.log
+
 
 ====
 TODO
