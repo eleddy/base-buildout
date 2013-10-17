@@ -66,7 +66,7 @@ HOW
 ===
 
 Production
-^^^^^^^^^^
+----------
 
   1. Clone this repo
   2. Optional: make a virtual env in the root::
@@ -91,9 +91,10 @@ Production
      % ../bin/buildout -c prod.cfg
 
 
+Other Setup
+^^^^^^^^^^^
 
-Logging
-^^^^^^^
+*Logging*
 
 You'll note that in production there is no syslog set up. This is because any logging
 is meant to be configured through rsyslog. This will make sure everything is centralized,
@@ -104,6 +105,14 @@ with a link to where you want the logs, and any remote logging like papertrail::
 
     local3.*          @logs.papertrailapp.com:XXXXX
     local3.*          /var/log/zope.log
+
+*Hosts*
+
+This assumes that you are using hosts for routing. Which you are, right? You will need::
+
+  * zeo (likely 127.0.0.1)
+
+That's it for now.
 
 
 ====
